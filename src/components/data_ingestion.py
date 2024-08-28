@@ -10,14 +10,15 @@ from dataclasses import dataclass
 from src.exception import CustomException
 from src.logger import logging 
 
+from src.components.data_transformation import DataTransformation,DataTransformationConfig
 
 #dataclass lets you create variables without using a constructor to define variables. Use decorator if class has no or less functions. Use __init__ for classes with functions
 #define save(output) paths for train, test and raw data files
 @dataclass
 class DataIngestionConfig:
-    train_data_path:str=os.path.join("artificat","train.csv")
-    test_data_path:str=os.path.join("artificat","test.csv")
-    raw_data_path:str=os.path.join("artificat","raw.csv")
+    train_data_path:str=os.path.join("artifact","train.csv")
+    test_data_path:str=os.path.join("artifact","test.csv")
+    raw_data_path:str=os.path.join("artifact","raw.csv")
 
 #create dataingestion class that has functions to ingest data and save data to the paths defined by dataingestionconfig class
 class DataIngestion:
@@ -56,4 +57,7 @@ class DataIngestion:
 
 if __name__=='__main__':
     data_obj=DataIngestion()
-    data_obj.initiate_data_ingestion()
+    train_data,test_data=data_obj.initiate_data_ingestion()
+
+    data_transformation=DataTransformation()
+    data_transformation.initiate_data_transformation(train_data,test_data)
