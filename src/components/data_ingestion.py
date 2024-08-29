@@ -10,7 +10,8 @@ from dataclasses import dataclass
 from src.exception import CustomException
 from src.logger import logging 
 
-from src.components.data_transformation import DataTransformation,DataTransformationConfig
+from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import ModelTrainer
 
 #dataclass lets you create variables without using a constructor to define variables. Use decorator if class has no or less functions. Use __init__ for classes with functions
 #define save(output) paths for train, test and raw data files
@@ -60,4 +61,8 @@ if __name__=='__main__':
     train_data,test_data=data_obj.initiate_data_ingestion()
 
     data_transformation=DataTransformation()
-    data_transformation.initiate_data_transformation(train_data,test_data)
+    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+
+    model_trainer=ModelTrainer()
+    print(model_trainer.initiate_model_trainer(train_arr=train_arr,test_arr=test_arr))
+
