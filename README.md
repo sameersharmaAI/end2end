@@ -6,7 +6,7 @@ Based on the details you provided, here’s a draft for your `README.md`:
 
 ## Overview
 
-This project is designed to demonstrate a modular and industry-level structure for machine learning applications. It includes custom logging and exception handling, and it integrates a Flask API with a web app hosted on AWS Elastic Beanstalk. The core functionality of the project is to predict students' math scores based on their attributes.
+This project is designed to demonstrate a modular and industry-level structure for machine learning applications. It includes custom logging and exception handling, and it integrates a Flask API with a web app written in html hosted on AWS Elastic Beanstalk with an AWS CodePipeline C/D Pipeline. The core functionality of the project is to predict students' math scores based on their attributes.
 
 ## Features
 
@@ -14,7 +14,7 @@ This project is designed to demonstrate a modular and industry-level structure f
 - Custom logging and exception handling.
 - Flask API serving as the backend for the web app.
 - HTML-based frontend for user interaction.
-- Integration with AWS Elastic Beanstalk for deployment.
+- Integration with AWS Elastic Beanstalk for deployment and AWS CodePipeline C/D pipeline.
 
 ## Installation
 
