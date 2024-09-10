@@ -44,12 +44,12 @@ To use this project locally, follow these steps:
    python application.py
    ```
 
-5. Open your browser and go to `http://127.0.0.1:5000/predict` to use the ML model.
+5. Open your browser and go to `http://127.0.0.1:5000/predictdata` to use the ML model.
 
 ## Usage
 
-- **Local**: After running the application locally, navigate to `http://127.0.0.1:5000/predict` to interact with the ML model.
-- **AWS Deployment**: The web app is also hosted on AWS Elastic Beanstalk. Access it via 
+- **Local**: After running the application locally, navigate to `http://127.0.0.1:5000/predictdata` to interact with the ML model.
+- **AWS Deployment**: The web app is also hosted on AWS Elastic Beanstalk. Access it via http://sp-env.eba-gjgtjntq.us-east-1.elasticbeanstalk.com/predictdata
 
 ## Data
 
