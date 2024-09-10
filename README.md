@@ -64,6 +64,4 @@ This project was developed as part of learning how to structure machine learning
 
 For any questions or feedback, please contact me at samy.sharmaa@gmail.com or open an issue on GitHub.
 
----
 
-Feel free to modify or expand any sections as needed. Let me know if there's anything specific you'd like to add or change!
