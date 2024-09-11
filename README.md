@@ -1,6 +1,4 @@
-Based on the details you provided, here’s a draft for your `README.md`:
 
----
 
 # End-to-End Machine Learning Project
 
