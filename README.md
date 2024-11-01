@@ -47,7 +47,7 @@ To use this project locally, follow these steps:
 ## Usage
 
 - **Local**: After running the application locally, navigate to `http://127.0.0.1:8000/predictdata` to interact with the ML model.
-- **AWS Deployment**: The web app is also hosted on AWS Elastic Beanstalk. Access it via http://sp4-env.eba-umzqkpvp.us-east-1.elasticbeanstalk.com/predictdata
+- **AWS Deployment**: (Currently down) The web app is also hosted on AWS Elastic Beanstalk. Access it via http://sp4-env.eba-umzqkpvp.us-east-1.elasticbeanstalk.com/predictdata
 
 ## Data
 
